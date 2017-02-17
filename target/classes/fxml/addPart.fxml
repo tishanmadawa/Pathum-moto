@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.media.*?>
+<?import javafx.scene.image.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="700.0" prefWidth="1300.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.tml.pathummoto.BillController">
+   <children>
+      <Label layoutX="78.0" layoutY="72.0" text="Part Type" />
+      <Label layoutX="78.0" layoutY="112.0" text="Part No" />
+      <Label layoutX="78.0" layoutY="147.0" text="Part Name" />
+      <Button layoutX="248.0" layoutY="226.0" mnemonicParsing="false" onAction="#addPart1" text="Add" />
+      <Label layoutX="77.0" layoutY="38.0" prefHeight="17.0" prefWidth="101.0" text="Model Name" />
+      <Label layoutX="77.0" layoutY="226.0" prefHeight="25.0" prefWidth="116.0" />
+      <Label layoutX="78.0" layoutY="183.0" text="Image No" />
+      <TextField fx:id="part_no" layoutX="200.0" layoutY="108.0" />
+      <TextField fx:id="part_nam" layoutX="200.0" layoutY="143.0" />
+      <TextField fx:id="image_no" layoutX="200.0" layoutY="179.0" />
+      <Label fx:id="labelparttype3" layoutX="366.0" layoutY="72.0" prefHeight="17.0" prefWidth="197.0" />
+      <Label fx:id="labelmodel3" layoutX="366.0" layoutY="38.0" prefHeight="17.0" prefWidth="197.0" />
+      <Label fx:id="labelpartno" layoutX="367.0" layoutY="112.0" prefHeight="17.0" prefWidth="197.0" />
+      <Label fx:id="labelpartname" layoutX="366.0" layoutY="147.0" prefHeight="17.0" prefWidth="197.0" />
+      <Label fx:id="labelimageno" layoutX="371.0" layoutY="183.0" prefHeight="17.0" prefWidth="217.0" />
+   </children>
+</AnchorPane>

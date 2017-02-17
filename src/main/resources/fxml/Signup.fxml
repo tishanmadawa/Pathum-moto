@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.shape.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="700"  style="-fx-background-color: lightblue;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.tml.pathummoto.SignupController">
+    <children>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="438.0" layoutX="278.0" layoutY="172.0" stroke="#1500ff" strokeType="INSIDE" width="785.0" />
+        <PasswordField id="password" fx:id="password" layoutX="599.0" layoutY="343.0" minHeight="16" minWidth="69" prefHeight="35.0" prefWidth="437.0" promptText="Password" />
+        <PasswordField id="Cpassword" fx:id="Cpassword" layoutX="599.0" layoutY="400" minHeight="16" minWidth="69" prefHeight="35.0" prefWidth="437.0" promptText="Confirm Password" />
+
+        
+        <TextField fx:id="name" layoutX="599.0" layoutY="292.0" minHeight="16" minWidth="69" prefHeight="35.0" prefWidth="437.0" promptText="User Name" />
+        <Button fx:id="button" layoutX="949.0" layoutY="455.0" onAction="#signupAction" prefHeight="35.0" prefWidth="87.0" text="Submit" textFill="#3300ff">
+         <effect>
+            <Lighting diffuseConstant="1.72" specularConstant="0.35" specularExponent="13.02" surfaceScale="2.66">
+               <bumpInput>
+                  <Shadow />
+               </bumpInput>
+               <light>
+                  <Light.Distant azimuth="61.74" color="#1c68c7" elevation="86.86" />
+               </light>
+            </Lighting>
+         </effect>
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font></Button>
+        <Label fx:id="label" layoutX="599.0" layoutY="450.0" minHeight="16" minWidth="69" prefHeight="17.0" prefWidth="232.0" />
+      <Label layoutX="367.0" layoutY="299.0" prefHeight="17.0" prefWidth="232.0" text="User Name" textFill="#1b06ff">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Label>
+      <Label layoutX="367.0" layoutY="350.0" prefHeight="17.0" prefWidth="232.0" text="Password" textFill="#2200ff">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Label>
+      <Label layoutX="642.0" layoutY="197.0" text="Signup" textFill="#0011ff">
+         <font>
+            <Font name="Aparajita" size="38.0" />
+         </font>
+      </Label>
+      <Label layoutX="367.0" layoutY="407.0" prefHeight="17.0" prefWidth="232.0" text="Confirm Password" textFill="#2200ff">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Label>
+    </children>
+</AnchorPane>

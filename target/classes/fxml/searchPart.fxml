@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+
+<AnchorPane id="AnchorPane" prefHeight="700.0"  xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/8" fx:controller="com.tml.pathummoto.AddPartController">
+   <children>
+      <Label layoutX="82.0" layoutY="69.0" prefHeight="17.0" prefWidth="76.0" text="Part No" />
+      <Label layoutX="82.0" layoutY="134.0" text="Price" />
+      <Label fx:id="set_Price" layoutX="170.0" layoutY="134.0" prefHeight="17.0" prefWidth="126.0" />
+      <TextField fx:id="part_Id" layoutX="170.0" layoutY="65.0" />
+      <Button layoutX="396.0" layoutY="65.0" mnemonicParsing="false" text="Search" onAction="#searchPart"/>
+   </children>
+</AnchorPane>

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" fx:id="combo" prefHeight="700.0" prefWidth="1370.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.tml.pathummoto.BillController">
+   <children>
+      <Label layoutX="73.0" layoutY="73.0" text="Part Type" />
+      <TextField fx:id="part_type" layoutX="243.0" layoutY="69.0" />
+      <Button fx:id="button" layoutX="413.0" layoutY="199.0" mnemonicParsing="false" onAction="#addMainParts" text="Add" />
+      <Label layoutX="73.0" layoutY="35.0" text="Model name" />
+      <Label layoutX="73.0" layoutY="117.0" text="Image" />
+      <TextField fx:id="path" layoutX="243.0" layoutY="113.0" />
+      <Button layoutX="432.0" layoutY="113.0" mnemonicParsing="false" onAction="#browsePart" text="Browse" />
+     
+      <Label fx:id="labelmodel2" layoutX="418.0" layoutY="35.0" prefHeight="17.0" prefWidth="184.0" />
+      <Label fx:id="labelparttype2" layoutX="418.0" layoutY="73.0" prefHeight="17.0" prefWidth="184.0" />
+      <Label fx:id="labelimage2" layoutX="503.0" layoutY="117.0" prefHeight="17.0" prefWidth="139.0" />
+    
+         
+   </children>
+</AnchorPane>

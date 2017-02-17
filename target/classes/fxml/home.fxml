@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="700.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.tml.pathummoto.BillController">
+   <children>
+      <MenuBar prefHeight="25.0" prefWidth="1370.0">
+        <menus>
+          <Menu mnemonicParsing="false" text="File">
+            <items>
+              <MenuItem mnemonicParsing="false" text="Close" />
+            </items>
+          </Menu>
+          <Menu mnemonicParsing="false" text="Customer">
+            <items>
+              <MenuItem mnemonicParsing="false" onAction="#addcustomer" text="Add Customer" />
+            </items>
+          </Menu>
+           
+         
+          <Menu mnemonicParsing="false" text="Model">
+            <items>
+              <MenuItem mnemonicParsing="false" onAction="#addModel1" text="Add Model" />
+            </items>
+          </Menu>
+           <Menu mnemonicParsing="false" text="Part Type">
+            <items>
+              <MenuItem mnemonicParsing="false" onAction="#addMainPart" text="Add Part Type" />
+            </items>
+          </Menu>
+           <Menu mnemonicParsing="false" text="Part">
+            <items>
+              <MenuItem mnemonicParsing="false" onAction="#addPart" text="Add Part" />
+            </items>
+          </Menu>
+        </menus>
+      </MenuBar>
+      <Label layoutX="577.0" layoutY="67.0" prefHeight="33.0" prefWidth="153.0" text="Model of Motor Cycle" textFill="#5900ff">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="994.0" layoutY="67.0" prefHeight="33.0" prefWidth="153.0" text="Motor Cycle No" textFill="#5900ff">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="577.0" layoutY="107.0" prefHeight="33.0" prefWidth="153.0" text="K.M" textFill="#5900ff">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="994.0" layoutY="107.0" prefHeight="33.0" prefWidth="153.0" text="Chasis No" textFill="#5900ff">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <TextField fx:id="type" layoutX="748.0" layoutY="67.0" prefHeight="33.0" prefWidth="228.0" />
+      <TextField fx:id="cycleNo" layoutX="1102.0" layoutY="67.0" prefHeight="33.0" prefWidth="242.0" />
+      <TextField fx:id="km" layoutX="748.0" layoutY="107.0" prefHeight="33.0" prefWidth="228.0" />
+      <TextField fx:id="chasisNo" layoutX="1102.0" layoutY="107.0" prefHeight="33.0" prefWidth="242.0" />
+      
+      <TextField fx:id="partNo" layoutX="748.0" layoutY="156.0" prefHeight="33.0" prefWidth="228.0" />
+      <Label  layoutX="575.0" layoutY="156.0" prefHeight="33.0" prefWidth="153.0" text="Part No" textFill="#5900ff">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Label fx:id="partNo1" layoutX="573.0" layoutY="569.0" prefHeight="33.0" prefWidth="153.0" text="Total Cost" textFill="#5900ff">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <TextField fx:id="km11" layoutX="750.0" layoutY="569.0" prefHeight="33.0" prefWidth="228.0" />
+      <TextField fx:id="km111" layoutX="751.0" layoutY="619.0" prefHeight="33.0" prefWidth="228.0" />
+      <Label fx:id="partNo11" layoutX="574.0" layoutY="619.0" prefHeight="33.0" prefWidth="153.0" text="Payment" textFill="#5900ff">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Button layoutX="338.0" layoutY="60.0" mnemonicParsing="false" onAction="#searchMainPart" prefHeight="25.0" prefWidth="81.0" text="Select" />
+      <Label layoutX="7.0" layoutY="56.0" prefHeight="33.0" prefWidth="146.0" text="Model of Motor Cycle" textFill="#5900ff">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="7.0" layoutY="89.0" prefHeight="33.0" prefWidth="146.0" text="Main Part" textFill="#5900ff">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Button layoutX="338.0" layoutY="93.0" mnemonicParsing="false" onAction="#searchPart" prefHeight="25.0" prefWidth="81.0" text="Select" />
+      <Button layoutX="994.0" layoutY="156.0" mnemonicParsing="false" onAction="#singlePart" prefHeight="33.0" prefWidth="97.0" text="Search" />
+   </children>
+</AnchorPane>
